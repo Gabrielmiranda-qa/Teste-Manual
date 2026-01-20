@@ -1,0 +1,126 @@
+# 🚀 Relatório de Testes Manuais – E-commerce
+
+## 👋 Visão Geral
+
+Este relatório apresenta os resultados dos **testes manuais** realizados em um sistema de **e-commerce**, com foco na experiência do usuário, funcionamento das principais funcionalidades e identificação de falhas que possam impactar o fluxo de compra.
+
+Os testes foram executados simulando o comportamento real de um usuário final.
+
+---
+
+## 🧪 Informações do Teste
+
+- **Projeto:** E-commerce  
+- **Tipo de Teste:** Manual  
+- **Testador:** Gabriel Miranda  
+- **Ambiente:** Desktop  
+- **Navegador:** Google Chrome  
+- **Data:** ___ / ___ / ______  
+
+---
+
+## 🎯 Objetivo
+
+Garantir que o sistema funcione corretamente nos principais pontos do fluxo do usuário, identificando bugs, inconsistências e oportunidades de melhoria, especialmente no processo de compra.
+
+---
+
+## 🔍 O que foi testado?
+
+### ✅ Em escopo
+- Fluidez e navegação geral
+- Login e logout
+- Validação de campos obrigatórios
+- Adição de produtos ao carrinho
+- Funcionamento do carrinho
+- Processo de checkout
+
+### ❌ Fora do escopo
+- Testes de performance avançados
+- Testes de segurança
+- Integrações externas
+
+---
+
+## 📊 Resumo dos Resultados
+
+| Funcionalidade | Resultado |
+|---------------|----------|
+| Navegação geral | ⚠️ Leve lentidão |
+| Login | ✅ Funcionando |
+| Logout | ✅ Funcionando |
+| Validação de campos vazios | ✅ Funcionando |
+| Adição ao carrinho | ✅ Funcionando |
+| Carrinho | ✅ Funcionando |
+| Checkout | ❌ Bug crítico encontrado |
+
+---
+
+## 📝 Principais Observações
+
+### ⚡ Fluidez do Sistema
+O sistema funciona conforme o esperado, porém apresenta **leve lentidão durante a navegação**, o que pode impactar a experiência do usuário em uso contínuo.
+
+---
+
+### 🔐 Login e Logout
+- Login e logout funcionam corretamente
+- Nenhuma falha identificada nesse fluxo
+
+---
+
+### 🛒 Carrinho de Compras
+- Produtos são adicionados sem erros
+- Carrinho mantém os itens corretamente
+- Experiência estável nessa etapa
+
+---
+
+### 🚨 Checkout (Bug Crítico)
+
+Durante o processo de checkout, foi identificado um **bug de alto impacto**:
+
+🔴 O sistema permite finalizar a compra preenchendo apenas:
+- Nome
+- Número do cartão de crédito  
+
+Os demais campos obrigatórios permanecem vazios, **sem validação ou mensagem de erro**.
+
+📌 **Classificação do bug:**
+- **Severidade:** Alta  
+- **Prioridade:** Alta  
+
+💥 **Impacto:**  
+Pedidos inválidos, falhas logísticas e possível prejuízo financeiro.
+
+---
+
+## 📸 Evidências
+
+As evidências do bug e dos testes executados estão disponíveis na pasta correspondente deste repositório, incluindo:
+- Prints do checkout com campos vazios
+- Print da finalização da compra sem validação
+
+---
+
+## 🛠️ Observações Técnicas
+
+- Melhorar a fluidez geral do sistema
+- Implementar validação obrigatória nos campos do checkout
+- Exibir mensagens claras de erro ao usuário
+
+---
+
+## ✅ Conclusão Final
+
+O sistema possui uma boa base funcional e permite a realização do fluxo principal do usuário.  
+No entanto, o bug identificado no checkout deve ser tratado como **prioridade máxima**, pois compromete a confiabilidade do processo de compra.
+
+---
+
+## 🔄 Próximos Passos (Visão de QA)
+
+Após a correção dos pontos levantados, recomenda-se:
+- 🔁 Reteste das funcionalidades afetadas
+- ♻️ Teste de regressão
+- ✔️ Validação final do fluxo de compra
